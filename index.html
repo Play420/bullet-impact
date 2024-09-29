@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullet Impact PUBG Mobile</title>
+    <link rel="stylesheet" href="/scss/style.css">
+</head>
+<body>
+  <header>
+    <a href=""><img src="/assets/img/1x2.png" alt="logotipo"></a>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#weapons">Armas</a></li>
+            <li><a href="#analysis">Análisis</a></li>
+            <li><a href="#community">Comunidad</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
+    <article>      
+      <section id="weapons">
+        <div class="container">
+          <h1>ANALISIS DE ARMAS DE PUBGM</h1>
+                <input type="text" id="searchInput" placeholder="Buscar arma..." onkeyup="filterTable()">
+                
+          <table id="weaponTable">
+              <thead>
+                  <tr style="color: #424242">
+                      <th>Arma</th>
+                      <th>Nomenclatura</th>
+                      <th>Daño-H</th>
+                      <th>Daño-B</th>
+                      <th>eBalas-H</th>
+                      <th>eBalas-B</th>
+                  </tr>
+              </thead>
+              <tbody id="tableBody">
+                  <!-- Los datos de la tabla se insertarán aquí mediante JavaScript -->
+              </tbody>
+          </table>
+      </div>
+      </section>
+      
+      <!-- <section id="analysis">
+        <h2>Análisis Detallado</h2>
+        <p>Accede a estadísticas avanzadas y comparaciones entre diferentes armas para optimizar tu rendimiento.</p>
+        <div class="armas">
+          <div class="arma"><img src="/assets/img/akm.png" alt=""></div>
+          <div class="arma"><img src="/assets/img/aug.png" alt=""></div>
+          <div class="arma"><img src="/assets/img/mini-14.png" alt=""></div>
+          <div class="arma"><img src="/assets/img/mp5.png" alt=""></div>
+          <div class="arma"><img src="/assets/img/akm.png" alt=""></div>
+          <div class="arma"><img src="/assets/img/aug.png" alt=""></div>
+          <div class="arma"><img src="/assets/img/mini-14.png" alt=""></div>
+          <div class="arma"><img src="/assets/img/mp5.png" alt=""></div>
+        </div>
+      </section> -->
+
+      <section id="community">
+        <h2>Comunidad</h2>
+        <p>Únete a una comunidad de jugadores apasionados. Comparte estrategias, participa en torneos y más.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </article>
+  </main>
+  <footer>
+    &copy; 2024 Bullet Impact PUBG Mobile
+</footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
