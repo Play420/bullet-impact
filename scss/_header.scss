@@ -1,0 +1,50 @@
+
+$black : #424242;
+$yellow : #ff9900;
+$white : #f5f5f5; 
+
+header {
+  background-color: $black;
+  padding: 0px 20px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+  }
+  img{
+    width: 100px;
+    height: auto  ;
+  }
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav{
+  ul{
+    li{
+      a{
+        color: $white;
+  text-decoration: none;
+      }
+    }
+  }
+}
+
+nav ul li:hover{
+  border-bottom: $yellow SOLID 3px;
+}
+
+
