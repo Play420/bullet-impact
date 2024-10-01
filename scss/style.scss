@@ -21,6 +21,14 @@ main {
   color: $white;
 }
 
+#weapons{
+  h1{
+    margin-top: 80px;
+    color: $white;
+    font-size: 1.8rem;
+  }
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
