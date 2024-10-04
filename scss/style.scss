@@ -1,5 +1,6 @@
 @use 'header' ;
 @use 'guns' ;
+@use 'responsive' ;
 
 
 $black : #424242;
@@ -65,17 +66,25 @@ th, td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #42424230;
+  
 }
+
+
 
 th {
   background-color: $white  ;
 }
 tr{
+  cursor: pointer;
   a{
     color: $black;
     font-weight: 700;
   }
 }
+
+
+
+
 
 tr:hover {
   background-color: $black;
@@ -132,3 +141,7 @@ footer {
   border-radius: 8px;
   margin: 5px;
 }
+
+
+
+
