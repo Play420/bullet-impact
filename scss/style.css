@@ -1,38 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap");
 header {
   background-color: #424242;
-  padding: 0px 20px;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  color: #f5f5f5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
 }
-header h1 {
-  margin: 0;
+header a {
+  display: flex;
 }
-header img {
+header a img {
   width: auto;
   height: auto;
 }
-
-nav ul {
+header .menu-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header .menu-toggle img {
+  width: 32px;
+  height: 32px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+header nav ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
-
-nav ul li {
-  display: inline;
-  margin-right: 15px;
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
 }
-
-nav ul li a {
+header nav ul li a {
   color: #f5f5f5;
   text-decoration: none;
 }
 
-nav ul li:hover {
-  border-bottom: #ff9900 SOLID 3px;
+nav ul li a:hover {
+  box-shadow: 0px 1px 0.8px 0px #ff9900;
 }
 
+#navMenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    margin: 0;
+    padding: 8px;
+    width: 85%;
+    background-color: #ff9900;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    z-index: 1000;
+    border-radius: 8px;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header nav ul li {
+    padding: 0;
+    margin: 0;
+  }
+  header nav ul li a {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+@media (min-width: 768px) {
+  #navMenu {
+    display: block;
+  }
+  #openIcon {
+    display: none;
+  }
+}
 #weaponDetails {
   background-color: #1f1f1f;
   color: #f5f5f5;
@@ -52,8 +112,104 @@ nav ul li:hover {
     font-size: 12px;
   }
 }
+#weaponSelector {
+  color: #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+#weaponSelector .selector {
+  display: flex;
+  flex-direction: column;
+}
+#weaponSelector .selector select {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#comparison {
+  color: #f5f5f5;
+  display: flex;
+  justify-content: space-around;
+}
+#comparison .weapon-details {
+  width: 45%;
+}
+
+#chartContainer {
+  color: #f5f5f5;
+}
+
+img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #comparison {
+    flex-direction: column;
+    align-items: center;
+  }
+  #comparison .weapon-details {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+main {
+  margin-top: 100px;
+}
+main #chatContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #f5f5f5;
+  padding: 10px;
+  color: #f5f5f5;
+}
+main #chatContainer #chatWindow {
+  height: 300px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ff9900;
+  margin-bottom: 10px;
+}
+
+input[type=text] {
+  width: calc(100% - 80px);
+  padding: 10px;
+}
+
+button {
+  width: 60px;
+}
+
+#weaponCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #f5f5f5;
+}
+
+.weapon-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.weapon-card img {
+  width: 100%;
+  height: auto;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
   background-color: #424242;
   color: #424242;
   margin: 0;

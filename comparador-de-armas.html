@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/scss/style.css">
-  <title>G36C</title>
+  <title>Comparador de Armas - Bullet Impact</title>
   <!-- favicon -->
   <link href="/assets/img/webp/ico-yellow.webp" rel="shortcut icon" type="image/x-icon">
   <link href="/assets/img/webp/ico-yellow.webp" rel="apple-touch-icon">
@@ -26,13 +26,34 @@
         </ul>
     </nav>
   </header>
-  <script src="/js/header.js"></script>
-<main>
-  <section id="weaponDetails"></section>
+  <main>
+    <h1 style="color:#ff9900">Comparador de Armas</h1>
+    <section id="weaponSelector">
+        <div class="selector">
+            <label for="weapon1">Selecciona Arma 1:</label>
+            <select id="weapon1" onchange="updateComparison()"></select>
+        </div>
+        <div class="selector">
+            <label for="weapon2">Selecciona Arma 2:</label>
+            <select id="weapon2" onchange="updateComparison()"></select>
+        </div>
+    </section>
+
+    <section id="comparison">
+        <div class="weapon-details" id="detailsWeapon1"></div>
+        <div class="weapon-details" id="detailsWeapon2"></div>
+    </section>
+
+    <section id="chartContainer">
+        <!-- Gráfica comparativa se insertará aquí -->
+    </section>
 </main>
+
   <footer>
     &copy; 2024 Bullet Impact PUBG Mobile
 </footer>
-    <script src="/js/guns.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/comparador.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

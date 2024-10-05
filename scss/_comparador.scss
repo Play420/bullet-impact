@@ -1,0 +1,47 @@
+//*- - - - - - [ C O L O R S ]- - - - - - -
+$black : #424242;
+$yellow : #ff9900;
+$white : #f5f5f5; 
+
+#weaponSelector {
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  .selector {
+    display: flex;
+    flex-direction: column;
+    select {
+      padding: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+#comparison {
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  .weapon-details {
+    width: 45%;
+  }
+}
+
+#chartContainer{
+  color:$white
+}
+
+img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #comparison {
+      flex-direction: column;
+      align-items: center;
+      .weapon-details {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+  }  
+}

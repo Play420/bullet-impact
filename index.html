@@ -8,20 +8,26 @@
     <link href="/assets/img/webp/ico-yellow.webp" rel="shortcut icon" type="image/x-icon">
   <link href="/assets/img/webp/ico-yellow.webp" rel="apple-touch-icon">
     <link rel="stylesheet" href="/scss/style.css">
+    
 </head>
 <body>
-  <header>
-    <a href=""><img src="/assets/img/webp/bullet-impact-logo-1x9-white.webp" alt="logotipo"></a>
-    <nav>
-        <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#weapons">Armas</a></li>
-            <li><a href="#analysis">Análisis</a></li>
-            <li><a href="#community">Comunidad</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
+  <header id="mainHeader">
+  <a href=""><img src="/assets/img/webp/bullet-impact-logo-1x9-white.webp" alt="logotipo"></a>
+  <div class="menu-toggle" id="toggleMenu">
+    <img src="/assets/img/svg/open.svg" alt="Open Menu" id="openIcon" >
+    <img src="/assets/img/svg/close.svg" alt="Close Menu" id="closeIcon" style="display: none;">
+</div>
+  <nav id="navMenu" >
+      <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="/seccion-de-armas.html">Armas</a></li>
+          <li><a href="/comparador-de-armas.html">Análisis</a></li>
+          <li><a href="#community">Comunidad</a></li>
+          <li><a href="/chat-bot.html">Contacto</a></li>
+      </ul>
+  </nav>
 </header>
+
   <main>
     <article>      
       <section id="weapons">
@@ -113,5 +119,6 @@
     &copy; 2024 Bullet Impact PUBG Mobile
 </footer>
     <script src="/js/script.js"></script>
+    <script src="/js/header.js"></script>
 </body>
 </html>

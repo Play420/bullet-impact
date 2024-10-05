@@ -3,38 +3,48 @@ $black : #424242;
 $yellow : #ff9900;
 $white : #f5f5f5; 
 
+//- - - - - - - [   C O N T E N E D O R   H E A D E R 
 header {
   background-color: $black;
-  padding: 0px 20px;  
+  padding: 0;  
+  margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-
-  h1 {
+  color: $white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s; //tiempo que tarda en dezplasarce el header al mostrar/ocultar
+  a{
+    display: flex;
+    img{
+      width: auto;
+      height: auto  ;
+    }
+  }
+  .menu-toggle { //icono de togglemenu
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+  nav{ //? - - - - - nav menu
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  ul{ //? - - - - - contenedor nav con <lu> "listas desordenadas"
+    list-style-type: none;
     margin: 0;
-  }
-  img{
-    width: auto;
-    height: auto  ;
-  }
-}
-
-
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 15px;
-}
-
-nav{
-  ul{
-    li{
+    padding: 0;
+    li{//? - - - - - contenedor de objeto de la lista
+      display: inline-block;
+    margin-right: 20px;
       a{
         color: $white;
   text-decoration: none;
@@ -42,9 +52,56 @@ nav{
     }
   }
 }
+}
 
-nav ul li:hover{
-  border-bottom: $yellow SOLID 3px;
+nav ul li a:hover{
+  box-shadow: 0px 1px .8px 0px  $yellow ;
+}
+
+#navMenu {
+  display: none; //? - - - - -  Oculto por defecto en móviles 
 }
 
 
+@media (max-width: 768px) {//? - - - - -  Mostrar en pantallas más pequeñas
+  header{
+    nav{//Contenedor nav 
+      margin: 0;
+      padding: 8px;
+        width: 85%;
+        background-color: $yellow;
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        z-index: 1000;
+        border-radius: 8px;
+      
+      ul {        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li{
+          padding: 0;
+          margin:0;
+          a{
+            margin: 0;
+            padding: 0;
+            font-size: .9rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) { //? - - - - - Mostrar en pantallas más grandes
+  #navMenu {
+      display: block; 
+  }
+
+#openIcon{
+  display: none;
+}
+
+}

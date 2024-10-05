@@ -7,9 +7,13 @@
   <title>M24</title>
 </head>
 <body>
-  <header>
-    <a href="/index.html"><img src="/assets/img/webp/bullet-impact-logo-1x9-white.webp" alt="logotipo"></a>
-    <nav>
+  <header id="mainHeader">
+    <a href="/.."><img src="/assets/img/webp/bullet-impact-logo-1x9-white.webp" alt="logotipo"></a>
+    <div class="menu-toggle" id="toggleMenu">
+      <img src="/assets/img/svg/open.svg" alt="Open Menu" id="openIcon" >
+      <img src="/assets/img/svg/close.svg" alt="Close Menu" id="closeIcon" style="display: none;">
+  </div>
+    <nav id="navMenu" >
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#weapons">Armas</a></li>
@@ -18,7 +22,8 @@
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
-</header>
+  </header>
+  <script src="/js/header.js"></script>
 <main>
   <section id="weaponDetails"></section>
 </main>

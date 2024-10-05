@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/scss/style.css">
-  <title>G36C</title>
-  <!-- favicon -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullet Impact Chatbot</title>
+    <!-- favicon -->
   <link href="/assets/img/webp/ico-yellow.webp" rel="shortcut icon" type="image/x-icon">
   <link href="/assets/img/webp/ico-yellow.webp" rel="apple-touch-icon">
+  <link rel="stylesheet" href="/scss/style.css">
 </head>
 <body>
   <header id="mainHeader">
@@ -26,13 +26,19 @@
         </ul>
     </nav>
   </header>
+  
+
+    <main>
+        <div id="chatContainer">
+            <div id="chatWindow"></div>
+            <input type="text" id="userInput" placeholder="Escribe tu pregunta..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </main>
+    <footer>
+      &copy; 2024 Bullet Impact PUBG Mobile 
+  </footer>
   <script src="/js/header.js"></script>
-<main>
-  <section id="weaponDetails"></section>
-</main>
-  <footer>
-    &copy; 2024 Bullet Impact PUBG Mobile
-</footer>
-    <script src="/js/guns.js"></script>
+  <script src="/js/chat-bot.js"></script>
 </body>
 </html>
