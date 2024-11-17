@@ -1,0 +1,10 @@
+Establecer una API para el chato bot para que no este tan retrasado
+
+agregar informacion de secciones armas
+
+convertir img a webp
+
+agregar iconos en tabla 
+
+hechar un fondo grunge en el inicio, un estilo redondeado como si fuera un top-slide-alert
+

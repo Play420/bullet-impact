@@ -1,9 +1,9 @@
-const weaponsData = [
+const weaponsData = [//contenido de la tabla. esto es nuestra base de datos
     { arma: "AWM", nomenclatura: "Arctic Warfare Magnum", imagen: "/assets/img/webp/guns/awm.webp", danoH: 262, danoB: 105, eBalasH: 1, eBalasB: 2  },
-    { arma: "Crossbow", nomenclatura: "Ballesta", imagen: "/assets/img/", danoH: 244, danoB: 105, eBalasH: 1, eBalasB: 2 },
+    { arma: "Crossbow", nomenclatura: "Ballesta", imagen: "/assets/img//webp/guns/crossbow.webp", danoH: 244, danoB: 105, eBalasH: 1, eBalasB: 2 },
   { arma: "M24", nomenclatura: "M24 Sniper Rifle", imagen: "/assets/img/webp/guns/m24.webp", danoH: 197, danoB: 79, eBalasH: 2, eBalasB: 3 },
-  { arma: "Kar98k", nomenclatura: "Karabiner 98 Kurz", imagen: "/assets/img/", danoH: 187, danoB: 75, eBalasH: 2, eBalasB: 3 },
-  { arma: "Win94", nomenclatura: "Winchester Model 1894", imagen: "/assets/img/", danoH: 164, danoB: 66, eBalasH: 2, eBalasB: 4 },
+  { arma: "Kar98k", nomenclatura: "Karabiner 98 Kurz", imagen: "/assets/img/webp/guns/kar98k.webp", danoH: 187, danoB: 75, eBalasH: 2, eBalasB: 3 },
+  { arma: "Win94", nomenclatura: "Winchester Model 1894", imagen: "/assets/img/webp/guns/win64.webp", danoH: 164, danoB: 66, eBalasH: 2, eBalasB: 4 },
   { arma: "MK14", nomenclatura: "Mark 14 Enhanced Battle Rifle", imagen: "/assets/img/webp/guns/mk-14.webp", danoH: 144, danoB: 61, eBalasH: 2, eBalasB: 4 },
   { arma:"SLR", nomenclatura:"Self-Loading Rifle (SLR)", imagen: "/assets/img/webp/guns/slr.webp", danoH: 140, danoB: 58, eBalasH: 2, eBalasB: 4},
   { arma:"SKS", nomenclatura:"Samozaryadny Karabin sistemy Simonova (SKS)", imagen: "/assets/img/webp/guns/sks.webp", danoH: 134, danoB: 56, eBalasH: 2, eBalasB: 4},
@@ -11,7 +11,7 @@ const weaponsData = [
   { arma:"Groza", nomenclatura:"OTs-14 Groza", imagen: "/assets/img/webp/guns/groza.webp", danoH: 113, danoB: 49, eBalasH: 3, eBalasB: 5},
   { arma:"DP-28", nomenclatura:"Degtyaryov Machine Gun (DP-28)", imagen: "/assets/img/webp/guns/dp-28.webp", danoH: 113, danoB: 49, eBalasH: 3, eBalasB: 5},
   { arma:"M762", nomenclatura:"Beryl M762", imagen: "/assets/img/webp/guns/beryl.webp", danoH: 112, danoB: 47, eBalasH: 3, eBalasB: 5},
-  { arma:"AUG A3", nomenclatura:"Armee-Universal-Gewehr (AUG) A3", imagen: "/assets/img/webp/guns/aug-a3.webp", danoH: 103, danoB: 43, eBalasH: 3, eBalasB: 5},
+  { arma:"AUG-A3", nomenclatura:"Armee-Universal-Gewehr (AUG) A3", imagen: "/assets/img/webp/guns/aug-a3.webp", danoH: 103, danoB: 43, eBalasH: 3, eBalasB: 5},
   { arma:"M416", nomenclatura:"Heckler & Koch HK416 (M416)", imagen: "/assets/img/webp/guns/m416.webp", danoH: 103, danoB: 43, eBalasH: 3, eBalasB: 5},
   { arma:"SCAR-L", nomenclatura:"Special Operations Forces Combat Assault Rifle - Light (SCAR-L)", imagen: "/assets/img/webp/guns/scar-l.webp", danoH: 103, danoB: 43, eBalasH: 3, eBalasB: 5},
   { arma:"QBZ", nomenclatura:"QBU-88 Bullpup Rifle (QBZ)", imagen: "/assets/img/webp/guns/qbz.webp", danoH: 103, danoB: 43, eBalasH: 3, eBalasB: 5},
@@ -46,7 +46,7 @@ function navigateToWeaponPage(weaponName) {
 	const weapon = weaponsData.find(w => w.arma.toLowerCase() === weaponName);
 	if (weapon) {
 		localStorage.setItem('selectedWeapon', JSON.stringify(weapon));
-		window.location.href = `${weaponName}.html`;
+		window.location.href = `/pubg-mobile-gun/${weaponName}.html`;
 	}
 }
 

@@ -1,9 +1,9 @@
 const weaponsData = [
     { arma: "AWM", nomenclatura: "Arctic Warfare Magnum", imagen: "/assets/img/webp/guns/awm.webp", danoH: 262, danoB: 105, eBalasH: 1, eBalasB: 2  },
-    { arma: "Crossbow", nomenclatura: "Ballesta", imagen: "/assets/img/", danoH: 244, danoB: 105, eBalasH: 1, eBalasB: 2 },
+    { arma: "Crossbow", nomenclatura: "Ballesta", imagen: "/assets/img/webp/guns/crossbow.webp", danoH: 244, danoB: 105, eBalasH: 1, eBalasB: 2 },
   { arma: "M24", nomenclatura: "M24 Sniper Rifle", imagen: "/assets/img/webp/guns/m24.webp", danoH: 197, danoB: 79, eBalasH: 2, eBalasB: 3 },
-  { arma: "Kar98k", nomenclatura: "Karabiner 98 Kurz", imagen: "/assets/img/", danoH: 187, danoB: 75, eBalasH: 2, eBalasB: 3 },
-  { arma: "Win94", nomenclatura: "Winchester Model 1894", imagen: "/assets/img/", danoH: 164, danoB: 66, eBalasH: 2, eBalasB: 4 },
+  { arma: "Kar98k", nomenclatura: "Karabiner 98 Kurz", imagen: "/assets/img/webp/guns/kar98k.webp", danoH: 187, danoB: 75, eBalasH: 2, eBalasB: 3 },
+  { arma: "Win94", nomenclatura: "Winchester Model 1894", imagen: "/assets/img/webp/guns/win64.webp", danoH: 164, danoB: 66, eBalasH: 2, eBalasB: 4 },
   { arma: "MK14", nomenclatura: "Mark 14 Enhanced Battle Rifle", imagen: "/assets/img/webp/guns/mk-14.webp", danoH: 144, danoB: 61, eBalasH: 2, eBalasB: 4 },
   { arma:"SLR", nomenclatura:"Self-Loading Rifle (SLR)", imagen: "/assets/img/webp/guns/slr.webp", danoH: 140, danoB: 58, eBalasH: 2, eBalasB: 4},
   { arma:"SKS", nomenclatura:"Samozaryadny Karabin sistemy Simonova (SKS)", imagen: "/assets/img/webp/guns/sks.webp", danoH: 134, danoB: 56, eBalasH: 2, eBalasB: 4},
@@ -47,7 +47,7 @@ filteredData.forEach(weapon => {
 
   const armaCell = document.createElement('td');
   const link = document.createElement('a');
-  link.href = `${weapon.arma.toLowerCase()}.html`;
+  link.href = `/pubg-mobile-gun/${weapon.arma.toLowerCase()}.html`;
   link.textContent = weapon.arma;
   link.onclick = (e) => {
     e.stopPropagation();

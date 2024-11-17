@@ -9,6 +9,7 @@
 
 //*- - - - - - [ C O L O R S ]- - - - - - -
 $black : #424242;
+$dark : #1f1f1f;
 $yellow : #ff9900;
 $white : #f5f5f5; 
 
@@ -20,7 +21,7 @@ $white : #f5f5f5;
 
 body {
   background-color: $black;
-  color: $black;
+  color: $white;
   margin: 0;
 }
 main {
@@ -42,12 +43,11 @@ main {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  background-color: $white;
+  background-color: $dark;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px $white;
   h1{
-    color:$black;
+    color:$white;
     font-weight: 800;
   }
 }
@@ -62,8 +62,9 @@ input[type="text"] {
   width: calc(100% - 20px);
   padding: 10px;
   margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid $white;
+  border-radius: 8px;
+  border: .01px solid ;
+  background-color: $white;
 }
 
 table {
@@ -81,12 +82,12 @@ th, td {
 
 
 th {
-  background-color: $white  ;
+  color: $white  ;
 }
 tr{
   cursor: pointer;
   a{
-    color: $black;
+    color: $white;
     font-weight: 700;
   }
 }
@@ -98,6 +99,7 @@ tr{
 tr:hover {
   background-color: $black;
   color: $white;
+  border-radius: 5px;
   
   a{
     text-decoration: none;
@@ -127,7 +129,7 @@ section {
 }
 
 footer {
-  background-color: #1f1f1f;
+  background-color: $dark;
   text-align: center;
   padding: 10px 0;
   color: $yellow;

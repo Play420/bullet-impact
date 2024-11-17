@@ -1,5 +1,6 @@
 //*- - - - - - [ C O L O R S ]- - - - - - -
 $black : #424242;
+$dark : #1f1f1f;
 $yellow : #ff9900;
 $white : #f5f5f5; 
 
@@ -11,7 +12,7 @@ $white : #f5f5f5;
 }
 
 .weapon-card {
-  border: 1px solid #ccc;
+  background-color: $dark;
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
@@ -19,8 +20,14 @@ $white : #f5f5f5;
   text-align: center;
 }
 
+.weapon-card:hover{
+  
+  background-color: $black;
+  box-shadow:0px 0px 1px .34px $yellow
+}
+
 .weapon-card img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
